@@ -1,43 +1,54 @@
-##MSc Business Analytics -  	Machine Learning and Content Analytics
+# Sentiment Analysis on Social Media Comments
 
-This repository contains the materials and code for the project Sentiment Analysis On Social Media Comments conducted by team Delta as part of the machine learning course. Below is a detailed explanation of the structure and contents of the repository.
+This repository contains the materials and code for the project **Sentiment Analysis on Social Media Comments** conducted by Team Delta as part of the Machine Learning course in the MSc Business Analytics program.
 
-Repository Structure
-/dataset/
+## Repository Structure
+
+### /dataset/
 This folder contains the datasets used for training and testing our models. The data has been split into indexed and preprocessed versions for different stages of the pipeline.
 
-/index/
+- **/index/**  
+  - `df_test_indexed.csv`: The test dataset with added indexes.  
+  - `df_training_indexed.csv`: The training dataset with added indexes.
 
-df_test_indexed.csv: The test dataset with added indexes.
-df_training_indexed.csv: The training dataset with added indexes.
-/preprocessed/
+- **/preprocessed/**  
+  - `df_test_preprocessed.csv`: The test dataset after preprocessing.  
+  - `df_training_preprocessed.csv`: The training dataset after preprocessing.  
+  - `test.csv`: The raw test dataset.  
+  - `train.csv`: The raw training dataset.
 
-df_test_preprocessed.csv: The test dataset after preprocessing.
-df_training_preprocessed.csv: The training dataset after preprocessing.
-test.csv: The raw test dataset.
-train.csv: The raw training dataset.
-/notebooks/
-This folder contains Jupyter notebooks used during the different phases of the project:
+### /notebooks/
+This folder contains Jupyter notebooks used during various stages of the project:
 
-indexing.ipynb: This notebook includes the code for indexing the datasets.
-preprocessing.ipynb: Contains code for preprocessing the datasets (e.g., cleaning, tokenization, etc.).
-training_with_tuning.ipynb: This notebook covers the model training process and hyperparameter tuning.
-readme.md
-This file provides an overview of the repository and the project structure.
+- **indexing.ipynb**: Code for indexing the datasets.
+- **preprocessing.ipynb**: Code for data preprocessing (e.g., cleaning, tokenization).
+- **training_with_tuning.ipynb**: Code for model training and hyperparameter tuning.
 
-Report
-The full report for the project is included in this repository as a PDF document. The report details the following:
+### Report
+The full project report is available in PDF format and includes:
 
-Introduction and problem statement
-Data preprocessing steps
-Model selection and training process
-Hyperparameter tuning
-Results and evaluation metrics
-Conclusion and future work
-Presentation
-A presentation summarizing the project's key points and findings is also included in PDF format. It covers:
+- Introduction and problem statement
+- Data preprocessing steps
+- Model selection and training process
+- Hyperparameter tuning
+- Results and evaluation metrics
+- Conclusion and future work
 
-The project overview
-The machine learning approach taken
-Key results and insights
-Final conclusions
+### Presentation
+A presentation summarizing the key points and findings of the project is included in PDF format, covering:
+
+- Project overview
+- Machine learning approach
+- Key results and insights
+- Final conclusions
+
+## Usage
+Clone the repository and navigate through the notebooks for detailed code execution. The datasets required for training and testing are located in the `/dataset/` folder.
+
+1. **Indexing:** Run `indexing.ipynb` to add indexes to the raw datasets.
+2. **Preprocessing:** Execute `preprocessing.ipynb` to clean and preprocess the data.
+3. **Model Training:** Use `training_with_tuning.ipynb` for training the model and performing hyperparameter tuning.
+
+## Contact
+For any queries or issues related to the project, please contact **Team Delta**.
+
